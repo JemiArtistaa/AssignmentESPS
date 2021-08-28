@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="13" total="14" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="37793" started-at="2021-08-28T17:35:22 BDT" finished-at="2021-08-28T17:35:59 BDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="37793" started-at="2021-08-28T17:35:22 BDT" finished-at="2021-08-28T17:35:59 BDT">
+      <class name="tests.TestCurrencyConversion">
+        <test-method status="PASS" signature="initbrowser()[pri:0, instance:tests.TestCurrencyConversion@27a5f880]" name="initbrowser" is-config="true" duration-ms="12239" started-at="2021-08-28T17:35:22 BDT" finished-at="2021-08-28T17:35:34 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initbrowser -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@27a5f880]" name="setup" is-config="true" duration-ms="1057" started-at="2021-08-28T17:35:34 BDT" finished-at="2021-08-28T17:35:35 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkRateUpdate()[pri:7, instance:tests.TestCurrencyConversion@27a5f880]" name="checkRateUpdate" duration-ms="24261" started-at="2021-08-28T17:35:35 BDT" finished-at="2021-08-28T17:35:59 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRateUpdate -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:tests.TestCurrencyConversion@27a5f880]" name="closebrowser" is-config="true" duration-ms="173" started-at="2021-08-28T17:35:59 BDT" finished-at="2021-08-28T17:35:59 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- tests.TestCurrencyConversion -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
