@@ -37,9 +37,9 @@ public class TestCurrencyConversion {
 	public void initbrowser() throws Exception {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get(url);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(7000, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
+		driver.get(url);
 		calculatorpageobject = new CalculatorPage(driver);
 	}
 
@@ -319,7 +319,7 @@ public class TestCurrencyConversion {
 		calculatorpageobject.changecountryto("Lithuania");
 
 		String currenynamebefore = calculatorpageobject.getcurrencyname();
-
+		System.out.println(currenynamebefore);
 		List<String> currencyListBefore = calculatorpageobject.getcurrencylist();
 		List<String> offRateListBefore = calculatorpageobject.getoffratelist();
 		List<String> eraRateListBefore = calculatorpageobject.geteraratelist();
@@ -327,7 +327,8 @@ public class TestCurrencyConversion {
 		calculatorpageobject.selectcurrencytousd();
 		String currenynameAfter = calculatorpageobject.getcurrencyname();
 		calculatorpageobject.clickFilterButton();
-
+		System.out.println(currenynameAfter);
+		
 		List<String> currencyListAfter = calculatorpageobject.getcurrencylist();
 		List<String> offRateListAfter = calculatorpageobject.getoffratelist();
 		List<String> eraRateListAfter = calculatorpageobject.geteraratelist();
@@ -514,7 +515,6 @@ public class TestCurrencyConversion {
 		SoftAssert sa = new SoftAssert();
 		
 		calculatorpageobject.changecountryto("Lithuania");
-		Thread.sleep(3000);
 		calculatorpageobject.inputBuy("50");
 		System.out.println("Previous buy input value : " + calculatorpageobject.getvalueofbuy());
 		calculatorpageobject.clickFilterButton();
@@ -524,7 +524,7 @@ public class TestCurrencyConversion {
 
 		calculatorpageobject.clearbuy();
 		calculatorpageobject.inputBuy("5000");
-		System.out.println("Previous buy input value : " + calculatorpageobject.getvalueofbuy());
+		System.out.println("Later buy input value : " + calculatorpageobject.getvalueofbuy());
 		calculatorpageobject.clickFilterButton();
 
 		List<Float> offRateListAfter = calculatorpageobject.rates("off");
@@ -550,7 +550,6 @@ public class TestCurrencyConversion {
 		SoftAssert sa = new SoftAssert();
 		
 		calculatorpageobject.changecountryto("Lithuania");
-		Thread.sleep(3000);
 		
 		String sellAmountValueBefore = calculatorpageobject.getvalueofsell();
 		String sellCurrencyBefore = calculatorpageobject.getcurrencyname();

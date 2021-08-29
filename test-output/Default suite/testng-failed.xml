@@ -5,9 +5,9 @@
     <classes>
       <class name="tests.TestCurrencyConversion">
         <methods>
+          <include name="checkratestupdatewithbuyinput"/>
           <include name="initbrowser"/>
           <include name="setup"/>
-          <include name="checkRateUpdate"/>
           <include name="closebrowser"/>
         </methods>
       </class> <!-- tests.TestCurrencyConversion -->

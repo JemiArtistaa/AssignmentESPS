@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import net.bytebuddy.asm.Advice.Return;
 
@@ -58,15 +60,27 @@ public class CalculatorPage {
 	@FindBy(xpath = "//button[contains(text(),'Clear filter')]")
 	WebElement clearFilterButton;
 	
+	@FindBy(xpath = "//tbody")
+	WebElement Table;
+	
+	
+	public void waitToLoad() {
+		WebDriverWait wait  = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOf(Table));
+	}
+	
 	public void clearinputfields() throws Exception {
+		Thread.sleep(1000);
 		clearsell();
 		clearbuy();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 	}
 	
 	public void clickclearfilterbutton() throws Exception {
 		clearFilterButton.click();
-		Thread.sleep(5000);
+		Thread.sleep(500);
+		waitToLoad();
+		Thread.sleep(1000);
 	}
 	
 	public void  movetofocusarea() throws Exception {
@@ -81,9 +95,10 @@ public class CalculatorPage {
 	
 	public void clearsell() throws Exception {
 		sellInputField.clear();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 	}
 	public void inputBuy(String amount) throws Exception {
+		Thread.sleep(500);
 		buyInputField.sendKeys(amount);
 		Thread.sleep(1000);
 	}
@@ -94,31 +109,31 @@ public class CalculatorPage {
 	}
 	
 	public String getvalueofbuy() throws Exception {
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		return buyInputField.getAttribute("value");
 	}
 	
 	public String getvalueofsell() throws Exception {
-		Thread.sleep(500);
+		Thread.sleep(1000);
 		return sellInputField.getAttribute("value");
 	}
 	
 	public void clickFilterButton() throws Exception {
 		filterButton.click();
-		Thread.sleep(2000);
+		Thread.sleep(500);
+		waitToLoad();
+		Thread.sleep(1000);
 	}
 
 	public List<String> getoffratelist() throws Exception {
 		
-		List<WebElement> officalRate =  driver.findElements(By.xpath("//td[@data-title='Official rate']"));
-		List<String> officialRateList = new ArrayList<String>();
+		List<WebElement> offRate =  driver.findElements(By.xpath("//td[@data-title='Official rate']"));
+		List<String> offRateList = new ArrayList<String>();
 		
-		for (WebElement e : officalRate) {
-			officialRateList.add(e.getText());
+		for (WebElement e : offRate) {
+			offRateList.add(e.getText());
 		}
-		
-		return officialRateList;		
-
+		return offRateList;		
 	}
 	
 	public List<String> geteraratelist() throws Exception {
@@ -129,7 +144,6 @@ public class CalculatorPage {
 		for (WebElement e : eraRate) {
 			eraRateList.add(e.getText());
 		}
-		Thread.sleep(1000);
 		return eraRateList;		
 	}
 	
@@ -141,37 +155,35 @@ public class CalculatorPage {
 			
 			currencyList.add(currList.get(i).getText());
 		}
-		Thread.sleep(1000);
 		return currencyList;
-
 	}
 	
 	public void selectcurrencytousd() throws Exception {
 		currencyButton.click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		driver.findElement(By.xpath("//span[@data-ng-bind='currency'][normalize-space()='USD']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 	}
 	
 	public void selectcurrencytoall() throws Exception {
 		currencyButton.click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		driver.findElement(By.xpath("//span[@data-ng-bind='currency'][normalize-space()='All']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 	}
 	
 	public void selectcurrency2toall() throws Exception {
 		currencyButton2.click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		driver.findElement(By.xpath("//span[@data-ng-bind='currency'][normalize-space()='All']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 	}
 	
 	public void selectcurrencytoeur() throws Exception {
 		currencyButton.click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		driver.findElement(By.xpath("//span[@data-ng-bind='currency'][normalize-space()='EUR']")).click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 	}
 	
 	public void changecurrencytousd() throws Exception {
@@ -179,7 +191,7 @@ public class CalculatorPage {
 		Thread.sleep(500);
 		driver.findElement(By.xpath("//span[@data-ng-bind='currency'][normalize-space()='USD']")).click();
 		clickFilterButton();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 	}
 	
 	public void changecountryto(String countryName) throws Exception {	
@@ -197,7 +209,8 @@ public class CalculatorPage {
 		if(countryName.equalsIgnoreCase("Bulgaria"))
 			countryselectbulgaria.click();
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//div[@class='widget-rate-page ng-scope']")));
-		Thread.sleep(2000);
+		waitToLoad();
+		Thread.sleep(1000);
 	}
 	
 	public void changecountrytolithuania() throws Exception {
@@ -280,11 +293,11 @@ public class CalculatorPage {
 	} 
 	
 	public String getcurrencyname() throws Exception {
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", currencyButton);
-		Thread.sleep(1000);
+//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", currencyButton);
+		Thread.sleep(500);
 		String currency ;
 		currency =  currencyButton.getText();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		return currency;
 	}
 	
