@@ -5,10 +5,21 @@
     <classes>
       <class name="tests.TestCurrencyConversion">
         <methods>
-          <include name="checkratestupdatewithbuyinput"/>
           <include name="initbrowser"/>
-          <include name="setup"/>
+          <include name="checkamountupdatetwithbuyinput"/>
+          <include name="checkamountupdatetwithsellinput"/>
+          <include name="checklosscalculation"/>
+          <include name="checklossexistance"/>
           <include name="closebrowser"/>
+          <include name="checkrateupdateforsamecurrency"/>
+          <include name="checkrateupdatefordiffcurrency"/>
+          <include name="checkcurrencyresetbasedoncountry"/>
+          <include name="checkclearfilterbutton"/>
+          <include name="checkratestupdatewithbuyinput"/>
+          <include name="checkcurrencybuttonsvalue"/>
+          <include name="setup"/>
+          <include name="checkrateupdatewithsellinput"/>
+          <include name="checkRateUpdate"/>
         </methods>
       </class> <!-- tests.TestCurrencyConversion -->
     </classes>

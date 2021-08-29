@@ -618,7 +618,7 @@ public class TestCurrencyConversion {
 		
 		SoftAssert sa= new SoftAssert();
 		
-		calculatorpageobject.changecountrytouk();
+		calculatorpageobject.changecountryto("UK");
 		String currencyonebefore = calculatorpageobject.getcurrencyname();
 		calculatorpageobject.selectcurrencytoall();
 		calculatorpageobject.selectcurrency2toall();
@@ -632,7 +632,6 @@ public class TestCurrencyConversion {
 		sa.assertEquals(currencyoneAfter, "GBP");
 		
 		calculatorpageobject.changecountryto("Bulgaria");
-		Thread.sleep(3000);
 		String currencybefore = calculatorpageobject.getcurrencyname();
 		calculatorpageobject.selectcurrencytoall();
 		calculatorpageobject.selectcurrency2toall();
