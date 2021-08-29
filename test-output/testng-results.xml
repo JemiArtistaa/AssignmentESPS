@@ -1,25 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="13" total="14" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37793" started-at="2021-08-28T17:35:22 BDT" finished-at="2021-08-28T17:35:59 BDT">
+  <suite name="Default suite" duration-ms="344340" started-at="2021-08-30T03:16:02 BDT" finished-at="2021-08-30T03:21:46 BDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37793" started-at="2021-08-28T17:35:22 BDT" finished-at="2021-08-28T17:35:59 BDT">
+    <test name="Default test" duration-ms="344340" started-at="2021-08-30T03:16:02 BDT" finished-at="2021-08-30T03:21:46 BDT">
       <class name="tests.TestCurrencyConversion">
-        <test-method status="PASS" signature="initbrowser()[pri:0, instance:tests.TestCurrencyConversion@27a5f880]" name="initbrowser" is-config="true" duration-ms="12239" started-at="2021-08-28T17:35:22 BDT" finished-at="2021-08-28T17:35:34 BDT">
+        <test-method status="PASS" signature="initbrowser()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="initbrowser" is-config="true" duration-ms="9084" started-at="2021-08-30T03:16:02 BDT" finished-at="2021-08-30T03:16:11 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initbrowser -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@27a5f880]" name="setup" is-config="true" duration-ms="1057" started-at="2021-08-28T17:35:34 BDT" finished-at="2021-08-28T17:35:35 BDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1051" started-at="2021-08-30T03:16:11 BDT" finished-at="2021-08-30T03:16:12 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkRateUpdate()[pri:7, instance:tests.TestCurrencyConversion@27a5f880]" name="checkRateUpdate" duration-ms="24261" started-at="2021-08-28T17:35:35 BDT" finished-at="2021-08-28T17:35:59 BDT">
+        <test-method status="PASS" signature="testBuySellFieldEmpty()[pri:1, instance:tests.TestCurrencyConversion@396f6598]" name="testBuySellFieldEmpty" duration-ms="14278" started-at="2021-08-30T03:16:12 BDT" finished-at="2021-08-30T03:16:26 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuySellFieldEmpty -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1056" started-at="2021-08-30T03:16:26 BDT" finished-at="2021-08-30T03:16:27 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkcurrencyupdate()[pri:2, instance:tests.TestCurrencyConversion@396f6598]" name="checkcurrencyupdate" duration-ms="22637" started-at="2021-08-30T03:16:27 BDT" finished-at="2021-08-30T03:16:50 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcurrencyupdate -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1046" started-at="2021-08-30T03:16:50 BDT" finished-at="2021-08-30T03:16:51 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkrateupdateforsamecurrency()[pri:3, instance:tests.TestCurrencyConversion@396f6598]" name="checkrateupdateforsamecurrency" duration-ms="15360" started-at="2021-08-30T03:16:51 BDT" finished-at="2021-08-30T03:17:06 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkrateupdateforsamecurrency -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1037" started-at="2021-08-30T03:17:06 BDT" finished-at="2021-08-30T03:17:07 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkrateupdatefordiffcurrency()[pri:4, instance:tests.TestCurrencyConversion@396f6598]" name="checkrateupdatefordiffcurrency" duration-ms="19789" started-at="2021-08-30T03:17:07 BDT" finished-at="2021-08-30T03:17:27 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkrateupdatefordiffcurrency -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1046" started-at="2021-08-30T03:17:27 BDT" finished-at="2021-08-30T03:17:28 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checklossexistance()[pri:5, instance:tests.TestCurrencyConversion@396f6598]" name="checklossexistance" duration-ms="59062" started-at="2021-08-30T03:17:28 BDT" finished-at="2021-08-30T03:18:27 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checklossexistance -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1053" started-at="2021-08-30T03:18:27 BDT" finished-at="2021-08-30T03:18:28 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checklosscalculation()[pri:6, instance:tests.TestCurrencyConversion@396f6598]" name="checklosscalculation" duration-ms="9292" started-at="2021-08-30T03:18:28 BDT" finished-at="2021-08-30T03:18:37 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checklosscalculation -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1035" started-at="2021-08-30T03:18:37 BDT" finished-at="2021-08-30T03:18:39 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkRateUpdate()[pri:7, instance:tests.TestCurrencyConversion@396f6598]" name="checkRateUpdate" duration-ms="16551" started-at="2021-08-30T03:18:39 BDT" finished-at="2021-08-30T03:18:55 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkRateUpdate -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:tests.TestCurrencyConversion@27a5f880]" name="closebrowser" is-config="true" duration-ms="173" started-at="2021-08-28T17:35:59 BDT" finished-at="2021-08-28T17:35:59 BDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1044" started-at="2021-08-30T03:18:55 BDT" finished-at="2021-08-30T03:18:56 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkamountupdatetwithsellinput()[pri:8, instance:tests.TestCurrencyConversion@396f6598]" name="checkamountupdatetwithsellinput" duration-ms="23066" started-at="2021-08-30T03:18:56 BDT" finished-at="2021-08-30T03:19:19 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkamountupdatetwithsellinput -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1038" started-at="2021-08-30T03:19:19 BDT" finished-at="2021-08-30T03:19:20 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkamountupdatetwithbuyinput()[pri:9, instance:tests.TestCurrencyConversion@396f6598]" name="checkamountupdatetwithbuyinput" duration-ms="33447" started-at="2021-08-30T03:19:20 BDT" finished-at="2021-08-30T03:19:54 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkamountupdatetwithbuyinput -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1038" started-at="2021-08-30T03:19:54 BDT" finished-at="2021-08-30T03:19:55 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkrateupdatewithsellinput()[pri:10, instance:tests.TestCurrencyConversion@396f6598]" name="checkrateupdatewithsellinput" duration-ms="20244" started-at="2021-08-30T03:19:55 BDT" finished-at="2021-08-30T03:20:15 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkrateupdatewithsellinput -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1033" started-at="2021-08-30T03:20:15 BDT" finished-at="2021-08-30T03:20:16 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkratestupdatewithbuyinput()[pri:11, instance:tests.TestCurrencyConversion@396f6598]" name="checkratestupdatewithbuyinput" duration-ms="23734" started-at="2021-08-30T03:20:16 BDT" finished-at="2021-08-30T03:20:40 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkratestupdatewithbuyinput -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1029" started-at="2021-08-30T03:20:40 BDT" finished-at="2021-08-30T03:20:41 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkclearfilterbutton()[pri:12, instance:tests.TestCurrencyConversion@396f6598]" name="checkclearfilterbutton" duration-ms="19820" started-at="2021-08-30T03:20:41 BDT" finished-at="2021-08-30T03:21:01 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkclearfilterbutton -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1039" started-at="2021-08-30T03:21:01 BDT" finished-at="2021-08-30T03:21:02 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkcurrencybuttonsvalue()[pri:13, instance:tests.TestCurrencyConversion@396f6598]" name="checkcurrencybuttonsvalue" duration-ms="13680" started-at="2021-08-30T03:21:02 BDT" finished-at="2021-08-30T03:21:15 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcurrencybuttonsvalue -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="setup" is-config="true" duration-ms="1031" started-at="2021-08-30T03:21:15 BDT" finished-at="2021-08-30T03:21:16 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkcurrencyresetbasedoncountry()[pri:14, instance:tests.TestCurrencyConversion@396f6598]" name="checkcurrencyresetbasedoncountry" duration-ms="29160" started-at="2021-08-30T03:21:16 BDT" finished-at="2021-08-30T03:21:45 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkcurrencyresetbasedoncountry -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:tests.TestCurrencyConversion@396f6598]" name="closebrowser" is-config="true" duration-ms="479" started-at="2021-08-30T03:21:46 BDT" finished-at="2021-08-30T03:21:46 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
